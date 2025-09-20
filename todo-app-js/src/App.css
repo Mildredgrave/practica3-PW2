@@ -1,0 +1,138 @@
+/* Contenedor*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #26656d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #330920;
+}
+
+/* Contenedor de TodoApp */
+.todo-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #3a8b70;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título TodoApp */
+.todo-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0b203d;
+}
+
+/*botón de agregar */
+.entrada-boton {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.entrada-boton input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #eee7f0;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.entrada-boton button {
+  padding: 0.5rem 1rem;
+  background-color: #54f63b;
+  color: rgb(61, 48, 3);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.entrada-boton button:hover {
+  background-color: #228427;
+}
+
+/* Botones*/
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filtros button {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #f6f3f4;
+  border-radius: 6px;
+  background-color: #329dea;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtros button.active {
+  font-weight: bold;
+  background-color: #14b9eb;
+  color: rgb(6, 1, 30);
+  border-color: #3b82f6;
+}
+
+.filtros button:hover:not(.active) {
+  background-color: #95fb7c;
+}
+
+/* Lista de tareas */
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lista-tareas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.lista-tareas li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Tarea completada */
+.completada {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Botón eliminar */
+.lista-tareas li button {
+  background-color: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.lista-tareas li button:hover {
+  color: #b91c1c;
+}
