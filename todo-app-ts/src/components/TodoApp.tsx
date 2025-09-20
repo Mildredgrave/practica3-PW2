@@ -79,7 +79,7 @@ function TodoApp() {
       <div className="contenedor-tareas">
         {tareasFiltradas.length === 0 ? (
           <p>No hay tareas</p>
-        ) : (
+        ) : ( /* si la condición es falsa, ejecuta esto que está después de los dos puntos :*/
           <ul className="lista-tareas">
             {tareasFiltradas.map((tarea) => (
               <li key={tarea.id}>
